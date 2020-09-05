@@ -17,9 +17,9 @@
             echo 'File needs to be 1MB max!','<br>';
         }
 
-        if($fileType != 'jpg' && $img['name'] != '.jpeg' && $img['name'] != '.png') {
+        if ($fileType != 'jpg' && $fileType != 'jpeg' && $fileType != 'png') {
             $tryUpload = false;
-            echo 'Only .jpg, .jpeg, .png types are allowed','<br>';
+            echo 'Only .jpg, .jpeg, .png types are allowed', '<br>';
         } else {
             $tryUpload = true;
 

@@ -17,10 +17,10 @@
     $fact = $_POST['fact'];
     if(isset($_POST['fact']) && $_POST['fact'] != false)
     {
-        if($fact > 21) {
-            echo 'DARN! That\'s way too much over PHP max number, try with numbers below 21 :)','<br>';
-        } elseif($fact <= 0) {
-            echo 'DARN! Please type number above 0!','<br>';
+        if ($fact >= 21) {
+            echo 'DARN! That\'s way too much over PHP max number, try with numbers below 21 :)', '<br>';
+        } elseif ($fact <= 0) {
+            echo 'DARN! Please type number above 0!', '<br>';
         }
         echo 'Factorial of ' . $fact . ' is ' . getFactorial($fact);
     }

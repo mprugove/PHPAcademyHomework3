@@ -1,5 +1,7 @@
 <form action='' method='POST'>
-    <input type='text' name='input'>
+    <label for="input">
+        <input type='text' name='input'>
+    </label>
     <button>Submit</button>
 </form>
 <?php
@@ -18,5 +20,5 @@
     if(isset($_POST['input'])) {
         echo 'Your input : ' . $reverse.'<br>';
         echo 'Your input reversed : ';
-        echo stringReverse($reverse);
+        stringReverse($reverse);
     }

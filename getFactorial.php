@@ -1,5 +1,7 @@
 <form action="" method="POST">
-    <input type="number" name="fact">   <!-- Only numbers allowed, getFactorial only accept int!! -->
+    <label for="fact">
+        <input type="number" name="fact">   <!-- Only numbers allowed, getFactorial only accept int!! -->
+    </label>
     <button>Submit</button>
 </form>
 <?php
